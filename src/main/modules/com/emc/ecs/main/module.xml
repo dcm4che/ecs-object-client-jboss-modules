@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.1" name="com.emc.ecs">
+    <resources>
+        <resource-root path="object-client-${object-client.version}.jar"/>
+        <resource-root path="smart-client-${smart-client.version}.jar"/>
+        <resource-root path="jersey-apache-client4-${jersey.version}.jar"/>
+        <resource-root path="jersey-client-${jersey.version}.jar"/>
+        <resource-root path="jersey-core-${jersey.version}.jar"/>
+    </resources>
+
+    <dependencies>
+        <module name="javax.api"/>
+        <module name="javax.ws.rs.api"/>
+        <module name="org.apache.httpcomponents"/>
+        <module name="org.apache.commons.codec"/>
+        <module name="org.slf4j"/>
+    </dependencies>
+</module>
